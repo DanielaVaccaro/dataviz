@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title></title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"></head>
+  <body>
+<style>
+body{margin: 0;}
+
+body{background-color:#000000}
+header{padding-top: 15px;}
+.back{color:#ffffff;font-size: 13px;font-family: 'Poppins', sans-serif;
+ text-decoration:none;
+ padding-left:24px;}
+ .info{color:#00ff3c;
+ font-family:'Poppins', sans-serif;
+ font-weight: 500;
+   font-size:14px;
+ margin-left: 1200px;
+margin-top:-15px;
+border: solid;
+border-color: #00ff3c;
+border-width: 1px;
+border-radius:200px;
+width:22px;
+text-align: center;
+ }
+.back:hover{color:#00ff3c;}
+.container{display: flex; flex-direction: row; margin-left: 3%; margin-right: 3%;}
+
+.method{visibility: hidden;
+  color:#00ff3c;
+position: absolute;
+width:85%;
+margin-top: 150px;
+margin-left:-1160px;
+font-family:'Poppins', sans-serif;
+font-weight: 200;
+font-size:20px;
+background-color: black;
+border: solid;
+border-color: #00ff3c;
+border-width: 1px;
+border-radius: 10px;
+height:350px;
+padding-top: 2%;
+padding-left: 2%;
+padding-right: 2%;}
+.info:hover .method{visibility: visible;}
+.info:hover{color:#ffffff;
+border-color:#ffffff;}
+
+.list{color:#ffffff;
+font-size:32px;
+font-family:'Poppins','Noto Serif SC', sans-serif;
+font-weight: 200; text-align: center;
+width:98%;
+padding-bottom: 10%;}
+
+.singolo{margin-bottom:-30px;}
+.singolo:hover{color:#00ff3c;}
+.singolo{margin-bottom:-30px;}
+.singolo:hover{color:#00ff3c;}
+img{
+    display: none
+}
+#bangdi:hover img{display: block; width:200px; position:absolute;left:200px; top: 100px; z-index:-1;}
+#bangu:hover img{display: block; width:150px; position:absolute;left:800px; top: 400px; z-index:-1;}
+#bangzi:hover img{display: block; width:150px; position:absolute;left:700px; top: 20px; z-index:-1;}
+
+#banhu:hover img{display: block; width:150px; position:absolute;left:100px; top: 450px; z-index:-1;}
+#bawu:hover img{display: block; width:150px; position:absolute;left:900px; top: 50px; z-index:-1;}
+#biangu:hover img{display: block; width:150px; position:absolute;left:300px; top: 550px; z-index:-1;}
+#bianqing:hover img{display: block; width:150px; position:absolute;left:700px; top: 450px; z-index:-1;}
+#bianzhong:hover img{display: block; width:150px; position:absolute;left:250px; top: 250px; z-index:-1;}
+#bili:hover img{display: block; width:150px; position:absolute;left:1000px; top: 350px; z-index:-1;}
+
+#bo:hover img{display: block; width:150px; position:absolute;left:50px; top: 600px; z-index:-1;}
+#chiba:hover img{display: block; width:150px; position:absolute;left:1050px; top: 500px; z-index:-1;}
+
+#daegeum:hover img{display: block; width:150px; position:absolute;left:750px; top: 700px; z-index:-1;}
+#daguangxian:hover img{display: block; width:130px; position:absolute;left:800px; top: 900px; z-index:-1;}
+
+#duanxiao:hover img{display: block; width:150px; position:absolute;left:180px; top: 550px; z-index:-1;}
+#datong:hover img{display: block; width:150px; position:absolute;left:900px; top: 750px; z-index:-1;}
+#dutar:hover img{display: block; width:150px; position:absolute;left:350px; top: 800px; z-index:-1;}
+#duxianqin:hover img{display: block; width:150px; position:absolute;left:1000px; top: 550px; z-index:-1;}
+#erhu:hover img{display: block; height:250px; position:absolute;left:800px; top: 780px; z-index:-1;}
+#erxian:hover img{display: block; width:150px; position:absolute;left:170px; top: 900px; z-index:-1;}
+#yugu:hover img{display: block; width:150px; position:absolute;left:830px; top: 980px; z-index:-1;}
+#gaohu:hover img{display: block; width:150px; position:absolute;left:1000px; top: 670px; z-index:-1;}
+#geomungo:hover img{display: block; width:150px; position:absolute;left:1100px; top: 1170px; z-index:-1;}
+
+#guqin:hover img{display: block; width:150px; position:absolute;left:100px; top: 900px; z-index:-1;}
+#hengdi:hover img{display: block; width:150px; position:absolute;left:400px; top: 1200px; z-index:-1;}
+
+#hulusi:hover img{display: block; width:150px; position:absolute;left:690px; top: 1040px; z-index:-1;}
+#huobusi:hover img{display: block; width:150px; position:absolute;left:100px; top: 1400px; z-index:-1;}
+
+#janggu:hover img{display: block; width:150px; position:absolute;left:800px; top: 1400px; z-index:-1;}
+
+
+#jiayeqin:hover img{display: block; width:150px; position:absolute;left:1000px; top: 1230px; z-index:-1;}
+#liujiaoxian:hover img{display: block; width:150px; position:absolute;left:380px; top: 1500px; z-index:-1;}
+#liuqin:hover img{display: block; width:100px; position:absolute;left:90px; top: 1700px; z-index:-1;}
+#lusheng:hover img{display: block; width:150px; position:absolute;left:1100px; top: 1800px; z-index:-1;}
+#maguhu:hover img{display: block; width:150px; position:absolute;left:150px; top: 1470px; z-index:-1;}
+#nanbangzi:hover img{display: block; width:150px; position:absolute;left:660px; top: 1850px; z-index:-1;}
+#nao:hover img{display: block; width:150px; position:absolute;left:100px; top: 1980px; z-index:-1;}
+#niutuiqin:hover img{display: block; width:150px; position:absolute;left:800px; top: 1600px; z-index:-1;}
+#paiban:hover img{display: block; width:150px; position:absolute;left:450px; top: 1600px; z-index:-1;}
+#pipa:hover img{display: block; width:150px; position:absolute;left:1000px; top: 1800px; z-index:-1;}
+#qudi:hover img{display: block; width:150px; position:absolute;left:90px; top: 2100px; z-index:-1;}
+#sanxian:hover img{display: block; width:150px; position:absolute;left:980px; top: 2170px; z-index:-1;}
+#shenbo:hover img{display: block; width:150px; position:absolute;left:200px; top: 1800px; z-index:-1;}
+#sheng:hover img{display: block; width:150px; position:absolute;left:700px; top: 2000px; z-index:-1;}
+#sibao:hover img{display: block; width:150px; position:absolute;left:130px; top: 2300px; z-index:-1;}
+#sihu:hover img{display: block; width:150px; position:absolute;left:1030px; top: 2100px; z-index:-1;}
+
+#suona:hover img{display: block; width:150px; position:absolute;left:900px; top: 2400px; z-index:-1;}
+#tanggu:hover img{display: block; width:150px; position:absolute;left:130px; top: 2100px; z-index:-1;}
+
+#tuhu:hover img{display: block; width:150px; position:absolute;left:1030px; top: 2400px; z-index:-1;}
+
+#muyu:hover img{display: block; width:150px; position:absolute;left:300px; top: 2600px; z-index:-1;}
+#xiao:hover img{display: block; width:150px; position:absolute;left:900px; top: 2700px; z-index:-1;}
+#xiaoluo:hover img{display: block; width:150px; position:absolute;left:160px; top: 2300px; z-index:-1;}
+
+#xiqin:hover img{display: block; width:150px; position:absolute;left:20px; top: 2600px; z-index:-1;}
+#xun:hover img{display: block; width:150px; position:absolute;left:1000px; top:2900px; z-index:-1;}
+#yamudi:hover img{display: block; width:150px; position:absolute;left:390px; top: 2400px; z-index:-1;}
+#yangqin:hover img{display: block; width:150px; position:absolute;left:730px; top: 3000px; z-index:-1;}
+#yazheng:hover img{display: block; width:150px; position:absolute;left:300px; top: 2700px; z-index:-1;}
+#yehu:hover img{display: block; width:110px; position:absolute;left:1000px; top: 2450px; z-index:-1;}
+
+#yueqin:hover img{display: block; width:150px; position:absolute;left:40px; top: 2980px; z-index:-1;}
+#yunluo:hover img{display: block; width:150px; position:absolute;left:1000px; top: 3200px; z-index:-1;}
+#zhong:hover img{display: block; width:150px; position:absolute;left:1100px; top: 2900px; z-index:-1;}
+#zhonghu:hover img{display: block; width:100px; position:absolute;left:70px; top: 3000px; z-index:-1;}
+#zhongruan:hover img{display: block; width:150px; position:absolute;left:680px; top: 2800px; z-index:-1;}
+#zhuihu:hover img{display: block; width:150px; position:absolute;left:1000px; top: 3200px; z-index:-1;}
+
+
+</style>
+<header>
+  <a class="back" href="datastory.html#posizione1" target="_self"> &#8592 BACK TO DATASTORY</a>
+
+<p class="info">?
+<span class="method">The initial dataset, provided by the Shanghai Conservatory of music and constituted by 115 traditional instruments, has been reduced to facilitate the following research steps.
+<br><br>
+Firstly, to avoid language ambiguity and conduct the research at an international level, every instrument has been matched with its English name or pinyin (when the English name does not exist). Every instrument's name has been verified through research on Google and Baidu search engines to ascertain the usage of the term.
+<br> <br>
+Secondly, instruments that differentiate from others only in terms of dimensions or ethnicity - and therefore were not recognized outside China - have been grouped under families while those who have no search results on Google have been deleted. The result is a selection of 62 instruments.
+</span></p>
+</header>
+
+<main>
+<div class="container">
+  <div class="list">
+<p class="singolo" id="bangdi"> Bangdi (梆笛)
+<img src="BANGDI.jpeg" alt="bangdi"> </p>
+<p class="singolo" id="bangu">Bangu (板鼓)
+<img src="BANGU.jpg" alt="bangu"></p>
+<p class="singolo" id="bangzi"> Bangzi (北梆子)
+<img src="BANGZI.jpg" alt="bangzi"></p>
+<p class="singolo" id="banhu"> Banhu (板胡)
+  <img src="BANHU.jpg" alt="banhu"></p>
+<p class="singolo" id="bawu"> Bawu (巴乌)
+  <img src="BAWU.jpg" alt="bawu"></p>
+<p class="singolo"id="biangu"> Biangu (扁鼓)
+  <img src="BIANGU.jpg" alt="biangu"> </p>
+<p class="singolo" id="bianqing"> Bianqing (编磬)
+  <img src="BIANQING.jpeg" alt="bianqing"> </p>
+<p class="singolo" id="bianzhong"> Bianzhong (编钟)
+  <img src="BIANZHONG.jpeg" alt="bianzhong"> </p>
+  <p class="singolo" id="bili"> Bili (筚篥)
+  <img src="BILI.jpg" alt="bili"> </p>
+<p class="singolo" id="bo"> Bo(镲)
+<img src="BO.png" alt="bo"> </p>
+<p class="singolo" id="chiba"> Chiba (南音洞箫)
+<img src="CHIBA.jpg" alt="chiba"> </p>
+<p class="singolo" id="daegeum"> Daegeum (大笒)
+<img src="DAEGEUM.jpg" alt="daegeum"> </p>
+<p class="singolo" id="daguangxian"> Daguangxian (大广弦)
+  <img src="DAGUANGXIAN.jpg" alt="daguangxian"> </p>
+<p class="singolo" id="duanxiao"> Danso or Duanxiao (短箫)
+  <img src="DUANXIAO.jpg" alt="duanxiao"> </p>
+<p class="singolo" id="datong"> Datong (花鼓戏大筒)
+  <img src="DATONG.jpeg" alt="datong"> </p>
+<p class="singolo" id="dutar"> Dutar (都塔尔)
+  <img src="DUTAR.jpg" alt="dutar"> </p>
+<p class="singolo" id="duxianqin"> Duxianqin (独弦琴)
+  <img src="DUXIANQIN.jpg" alt="duxianqin"> </p>
+<p class="singolo" id="erhu"> Erhu (黄梅戏主胡)
+  <img src="ERHU.jpeg" alt="erhu"> </p>
+<p class="singolo" id="erxian"> Erxian (二弦)
+  <img src="ERXIAN.png" alt="erxian"> </p>
+<p class="singolo" id="yugu"> Fish Drum or Yugu (渔鼓)
+<img src="YUGU.jpg" alt="yugu"> </p>
+<p class="singolo" id="gaohu"> Gaohu (高胡)
+  <img src="GAOHU.png" alt="gaohu"> </p>
+<p class="singolo" id="geomungo"> Geomungo (玄琴)
+  <img src="GEOMUNGO.jpg" alt="geomungo"> </p>
+<p class="singolo" id="guqin"> Guqin (古琴)
+<img src="GUQIN.jpg" alt="guqin"> </p>
+<p class="singolo" id="hengdi"> Hengdi (横笛)
+  <img src="HENGDI.jpg" alt="hengdi"> </p>
+<p class="singolo" id="hulusi"> Hulusi (葫芦丝)
+  <img src="HULUSI.jpg" alt="hulusi"> </p>
+<p class="singolo" id="huobusi"> Huobusi (火不思)
+  <img src="HUOBUSI.jpg" alt="huobusi"> </p>
+<p class="singolo" id="janggu"> Janggu (杖鼓)
+<img src="JANGGU.jpg" alt="janggu"> </p>
+<p class="singolo" id="jiayeqin"> Jiayeqin (伽倻琴)
+  <img src="JIAYEQIN.jpg" alt="jiayeqin"> </p>
+<p class="singolo" id="liujiaoxian"> Liujiaoxian (六角弦)
+  <img src="LIUJIAOXIAN.jpg" alt="liujiaoxian"> </p>
+<p class="singolo" id="liuqin"> Liuqin (柳琴)
+  <img src="LIUQIN.jpeg" alt="liuqin"> </p>
+<p class="singolo" id="lusheng"> Lusheng (芦笙)
+  <img src="LUSHENG.jpg" alt="lusheng"> </p>
+<p class="singolo" id="maguhu"> Maguhu (马骨胡)
+<img src="MAGUHU.png" alt="maguhu"> </p>
+<p class="singolo" id="nanbangzi"> Nanbangzi (南梆子)
+<img src="NANBANGZI.png" alt="nanbangzi"> </p>
+<p class="singolo" id="nao"> Nao (铙)
+  <img src="NAO.png" alt="nao"> </p>
+<p class="singolo" id="niutuiqin"> Niutuiqin (牛腿琴)
+  <img src="NIUTUIQIN.jpeg" alt="niutuiqin"> </p>
+<p class="singolo" id="paiban"> Paiban (拍板)
+  <img src="PAIBAN.jpg" alt="paiban"> </p>
+<p class="singolo" id="pipa"> Pipa (琵琶)
+<img src="PIPA.jpeg" alt="pipa"> </p>
+<p class="singolo" id="qudi"> Qudi (曲笛)
+<img src="QUDI.jpeg" alt="qudi"> </p>
+<p class="singolo" id="sanxian"> Sanxian (三弦)
+  <img src="SANXIAN.png" alt="sanxian"> </p>
+<p class="singolo" id="shenbo"> Shenbo (深波)
+  <img src="SHENBO.jpeg" alt="shenbo"> </p>
+<p class="singolo" id="sheng"> Sheng (音笙)
+  <img src="SHENG.png" alt="sheng"> </p>
+<p class="singolo" id="sibao"> Sibao (管)
+<img src="SIBAO.jpg" alt="sibao"> </p>
+<p class="singolo" id="sihu"> Sihu (四胡)
+<img src="SIHU.jpg" alt="sihu"> </p>
+<p class="singolo" id="suona"> Suona (唢呐)
+<img src="SUONA.png" alt="suona"> </p>
+<p class="singolo" id="tanggu"> Tanggu (堂鼓)
+  <img src="TANGGU.jpg" alt="tanggu"> </p>
+<p class="singolo" id="tuhu"> Tuhu (土胡)
+<img src="TUHU.jpg" alt="tuhu"> </p>
+<p class="singolo" id="muyu"> Wooden fish or Muyu (木鱼)
+  <img src="MUYU.png" alt="muyu"> </p>
+<p class="singolo" id="xiao"> Xiao (箫)
+  <img src="XIAO.png" alt="xiao"> </p>
+<p class="singolo" id="xiaoluo"> Xiaoluo (小锣)
+  <img src="XIAOLUO.png" alt="xiaoluo"> </p>
+<p class="singolo"> Xindi (新笛)</p>
+
+<p class="singolo" id="xiqin"> Xiqin (中音奚琴)
+  <img src="XIQIN.jpg" alt="xiqin"> </p>
+<p class="singolo" id="xun"> Xun (埙)
+  <img src="XUN.png" alt="xun"> </p>
+<p class="singolo" id="yamudi"> Yamudi (鸭母笛)
+  <img src="YAMUDI.jpeg" alt="yamudi"> </p>
+<p class="singolo" id="yangqin"> Yangqin (扬琴)
+  <img src="YANGQIN.jpeg" alt="yangqin"> </p>
+<p class="singolo" id="yazheng"> Yazheng (雅筝)
+  <img src="YAZHENG.jpg" alt="yazheng">
+<p class="singolo" id="yehu"> Yehu (椰胡)
+  <img src="YEHU.jpeg" alt="yehu">
+<p class="singolo" id="yueqin"> Yueqin (月琴)
+  <img src="YUEQIN.jpg" alt="yueqin">
+<p class="singolo" id="yunluo"> Yunluo (云锣)
+  <img src="YUNLUO.png" alt="yunluo">
+<p class="singolo" id="zhong"> Zhong (钟)
+<img src="ZHONG.jpg" alt="zhong"></p>
+<p class="singolo" id="zhonghu"> Zhonghu (中胡)
+  <img src="ZHONGHU.jpeg" alt="zhonghu"> </p>
+<p class="singolo" id="zhongruan"> Zhongruan (中阮)
+  <img src="ZHONGRUAN.png" alt="zhongruan"> </p>
+<p class="singolo" id="zhuihu"> Zhuihu (坠胡)
+  <img src="ZHUIHU.jpg" alt="zhuihu"> </p>
+</div>
+
+</div>
+</main>
+  </body>
+</html>

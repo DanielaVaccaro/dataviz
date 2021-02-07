@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./inspector.css">
+
+    <title></title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<style>
+body{margin: 0;}
+
+  header{padding-top: 15px; background-color:#ff4e00;}
+  .back{color:#000000;font-size: 13px;font-family: 'Poppins', sans-serif;
+   text-decoration:none;
+   padding-left:3%;}
+  .back:hover{color:#00ff3c;}
+  .go{color:#000000;font-size: 13px;font-family: 'Poppins', sans-serif;
+   text-decoration:none; padding-left: 71%; padding-right: 3%;margin-top: 0px;}
+  .go:hover{color:#00ff3c;}
+
+.container{display: flex; flex-direction: column;
+  max-width: 100%; margin: auto; background-color:#efefef;}
+
+.intro{background-color: #ff4e00; margin: auto; height: 700px;
+display: flex; flex-direction: column; justify-content: flex-start;padding-top: 30px;  padding-left: 5%;
+padding-right: 5%; color:#000000;  font-family:'Poppins', sans-serif;}
+
+.phase1{ font-size:84px; font-weight: 400; margin-top: -155px;margin-bottom: -5px; }
+.paragraph{ font-size: 22px; font-weight: 500;margin-top: -20px;}
+
+.rest{padding-left: 5%; padding-right: 5%;padding-top: 60px;}
+.graph{display: flex; flex-direction: row;margin-top: -10%; margin-bottom:6%;}
+.graph1{display: flex; flex-direction: row;margin-top: 5%; margin-bottom:6%;}
+
+#observablehq-af621840{width: 80%;}
+.dida{width: 20%;  font-family:'Poppins', sans-serif; font-weight: 500; font-size: 12px; margin-left: 5%;}
+
+.click{color:#ff4e00;}
+.b{font-family:'Poppins', sans-serif; font-weight: 500; font-size: 64px; margin-top: -170px; margin-bottom:-15px;}
+.insights{font-family:'Poppins', sans-serif; font-weight: 500; font-size: 20px; margin-top: -10%; color:#000000; font-style: normal; margin-bottom:10%;}
+
+</style>
+
+
+<header>
+  <a class="back" href="phase2.html" target="_self"> &#8592 BACK TO PHASE 2</a>
+  <a class="go" href="datastory.html" target="_self"> GO TO DATASTORY &#8594 </a>
+</header>
+
+<div class="container">
+      <div class="intro">
+             <svg width="100%" height:10px;> <line x1="0" y1="0" x2="1800px" y2="0" style="stroke:#000000;stroke-width:5" /> </svg>
+             <h1 class="phase1">PHASE 3 </h1>
+             <svg width="100%" height:10px;> <line x1="0" y1="0" x2="1800px" y2="0" style="stroke:#000000;stroke-width:5" /> </svg>
+            <p class="paragraph">Behind the understanding of traditional Chinese instrument's nature, popularity, and peak events of the first phases, the third analysis focuses on cultural consumption motivations: what exactly do people want to know? Which are the reasons behind those searches?
+              <br><br>
+Datasets collection regarded Baidu users' search behaviors, analyzing back and forth keywords related to each instrument.  This step evidences some interconnections between contemporary Chinese points of interest and traditional instruments, displaying how traditional music culture has been influenced by Chinese culture and society in recent years.</p>
+  </div>
+   <div class="rest">
+
+     <svg width="100%" height:10px;> <line x1="0" y1="0" x2="1800px" y2="0" style="stroke:#000000;stroke-width:3" /> </svg>
+     <p class="b"> FINDINGS </p>
+     <svg width="100%" height:10px;> <line x1="0" y1="0" x2="1800px" y2="0" style="stroke:#000000;stroke-width:3" /> </svg>
+
+
+      <div class="graph">
+        <div id="observablehq-af621840">
+<div class="observablehq-chart"></div>
+</div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@nicolesacchetti/baidu-keyword.js?v=3";
+(new Runtime).module(define, name => {
+if (name === "chart") return Inspector.into("#observablehq-af621840 .observablehq-chart")();
+});
+</script>
+             <p class="dida"> <u> Baidu Keyword Treemap (2019). </u><br>A treemap showing the first hundred results in terms of instruments-related-keywords highest search heats per day of 2019.  The analysis takes into account keywords related to all the 62 selected instruments. Keyword values represent the term highest absolute number of searches in one day on Baidu, and each word's subsets show which instruments people searched before or after that keyword.
+<br><br>
+<span class="click"> Click on the green rectangles to open the treemap, then click on the grey bar to go back.</span>
+ </p>      </div>
+
+
+
+
+        <svg width="100%" height:10px;> <line x1="0" y1="0" x2="1800px" y2="0" style="stroke:#000000;stroke-width:3" /> </svg>
+        <p class="b"> INSIGHTS </p>
+        <svg width="100%" height:10px;> <line x1="0" y1="0" x2="1800px" y2="0" style="stroke:#000000;stroke-width:3" /> </svg>
+
+<p class="insights">The treemap graph allows seeing the hierarchical proportion between keywords' highest search heat to identify people's search behaviors regarding traditional Chinese music. The highest peak appears to be event-related: "How many strings does an Erhu have?" was Alipay 2019 quiz to gain. On the 20th of August, more than one million and a half people typed on Baidu that question, reaching one of the highest search peaks related to traditional music since 2011. Almost half of the results are keywords related to other instruments, while event-related keywords, movies in which the instrument is played, songs, performance names, singers and historical insights characterize the other half.
+Those results show which are 2019 drivers to traditional Chinese instruments online consumption.</p>
+
+  </div>
+</div>
+
+  </body>
+</html>

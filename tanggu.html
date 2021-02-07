@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+body{margin:0px;}
+.video{width: 100%;height: 100%;
+z-index:-100;background-color: #000000;}
+
+      .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.closebtn{font-family: 'VT323', monospace;color:#00ff3c;}
+.back{font-family: 'VT323', monospace; position:absolute; margin-top:2%;margin-left:95.5%; color:#00ff3c; font-size:26px; z-index:1;text-decoration:none;border:solid; border-width:1.5px; border-radius:50px; border-color: #00ff3c; width:28px;text-align:center;}
+.discover{font-family: 'VT323', monospace; font-size:28px;color:#00ff3c;cursor:pointer; position:absolute;margin-top:5%; margin-left:95.5%;z-index:1; border:solid; border-width:1.5px; border-radius:50px; border-color: #00ff3c;width:28px;text-align:center;}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}}
+.sp{color:#ffffff;font-family:'Archivo Narrow', sans-serif;font-size: 18px;padding-left: 30px;padding-top: 40px; padding-right: 20px;}
+  </style>
+  </head>
+  <body>
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+  <p class="sp">The winner of the CCTV talent show, "The Chinese People", was Zhong Ruan performer Feng Man Tin. His dedication to innovating and promoting Zhongruan for 30 years is moving.
+    </p>
+</div>
+    <span class="discover" onclick="openNav()">?</span>
+<a class="back" href="index.html">X</a>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "450px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<video class="video" src="Tanggu.m4v" controls loop>
+
+</video>
+  </body>
+</html>
